@@ -2,12 +2,10 @@
 
 .Ways {
   @extend .align-center;
-  max-width: 800px;
   justify-content: space-between;
   width: 100%;
   margin: auto;
   gap: 2rem;
-  height: 8rem;
   color: $dark;
   padding-left: 2rem;
   padding-right: 2rem;
@@ -21,15 +19,35 @@
   }
 
   &-left {
-    height: 100%;
+    flex: 1;
 
-    img {
-      height: 100%;
+    &_title {
+      line-height: 3.005rem;
+      font-size: 2.375rem;
+    }
+
+    &_body {
+      margin-top: 1rem;
+    }
+
+    &_start {
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+      padding: 1rem;
+      cursor: pointer;
+      border: 1px solid #bbb !important;
+      border-radius: 10px;
+      font-weight: bold;
+      transition: all 300ms ease-in-out;
+      text-transform: capitalize;
+      background-color: $dark;
+      color: white;
     }
   }
 
   &-right {
     line-height: 1.75rem;
+    flex: 3;
 
     &-title {
       line-height: 3rem;
