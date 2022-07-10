@@ -22,6 +22,12 @@ body {
   scroll-behavior: smooth;
 }
 
+.Home {
+  position: relative;
+  z-index: 1;
+  min-height: 1000px;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
