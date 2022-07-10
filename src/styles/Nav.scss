@@ -1,0 +1,86 @@
+@import "styles/global.scss";
+
+.align-center {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Nav {
+  @extend .align-center;
+  background-color: white;
+  padding: 1.9rem 2rem;
+  height: 6rem;
+  column-gap: 3rem;
+  width: 100%;
+  margin: auto;
+
+  //
+  position: sticky;
+  top: 0;
+  z-index: 20;
+
+  &_img {
+    height: 90%;
+    cursor: pointer;
+
+    img {
+      height: 100%;
+    }
+  }
+
+  &_right {
+    text-transform: capitalize;
+    flex: 1;
+    @extend .align-center;
+    column-gap: 3rem;
+
+    @media (max-width: $max-width) {
+      display: none;
+    }
+
+    a {
+      text-transform: capitalize;
+    }
+
+    &-left {
+      display: flex;
+      column-gap: 3rem;
+      font-weight: 500;
+      font-size: 1rem;
+    }
+
+    &-right {
+      @extend .align-center;
+      column-gap: 0.5rem;
+
+      &_link {
+        padding: 1rem 0.5rem;
+        border: 0.1px $dark solid;
+        border-radius: 10px;
+        font-weight: bold;
+        font-size: 1.125rem;
+        transition: all 300ms ease-in-out;
+
+        &:hover {
+          background-color: $dark;
+          color: white;
+        }
+
+        &.active {
+          background-color: $dark;
+          color: white;
+          &:hover {
+            background-color: white;
+            color: $dark;
+          }
+        }
+      }
+    }
+  }
+
+  &_menu {
+    font-size: 2rem;
+    cursor: pointer;
+  }
+}
