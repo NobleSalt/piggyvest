@@ -1,15 +1,18 @@
 import 'styles/Nav.scss'
 import logo from 'assets/logo.svg'
-import { FiMenu } from 'react-icons/fi'
+import { FiMenu, FiX } from 'react-icons/fi'
+import { useState } from 'react'
 
 export default function Nav() {
+   const [active, setActive] = useState<boolean>(false)
 
    return <nav className='fade small stagger ease-out-back duration-30 bg-white sticky'>
       <div className="max-width Nav">
          <a href='/' className="Nav_img">
             <img src={logo} alt="Logo" />
          </a>
-         <div className="Nav_right">
+
+         <div className={active ? "Nav_right active" : "Nav_right"}>
             <div className="Nav_right-left">
                <a href="" className="Nav_right-left_link">save</a>
                <a href="" className="Nav_right-left_link">invest</a>
@@ -23,7 +26,7 @@ export default function Nav() {
             </div>
          </div>
          <i className="Nav_menu mobile">
-            <FiMenu />
+            {active ? <FiX onClick={(e) => setActive(!active)} /> : <FiMenu onClick={(e) => setActive(!active)} />}
          </i>
       </div>
    </nav>
