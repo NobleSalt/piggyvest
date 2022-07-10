@@ -46,8 +46,64 @@
   }
 
   &-right {
-    line-height: 1.75rem;
+    @extend .align-center;
     flex: 3;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    @media (max-width: $mobile) {
+      justify-content: center;
+    }
+
+    &_box {
+      cursor: pointer;
+      max-width: 350px;
+      width: 100%;
+      background-color: $grey;
+      padding: 2rem;
+      border-radius: 1rem;
+
+      &-icon {
+        width: 3.125rem;
+        height: 3.125rem;
+        margin-bottom: 2rem;
+      }
+
+      &-content {
+        margin-bottom: 2rem;
+        line-height: 1.75rem;
+
+        &_title {
+          text-transform: capitalize;
+          font-size: 1.25rem;
+          font-weight: bold;
+          margin-bottom: 1rem;
+        }
+
+        &_button {
+          display: flex;
+          gap: 0.5rem;
+          align-items: center;
+
+          &-icon {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.5rem;
+            width: 2.25rem;
+            height: 2.25rem;
+            border-radius: 50%;
+          }
+
+          &-button {
+            color: #353535;
+            text-transform: capitalize;
+            font-weight: 500;
+          }
+        }
+      }
+    }
 
     &-title {
       line-height: 3rem;
