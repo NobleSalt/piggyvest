@@ -11,7 +11,15 @@
   color: $dark;
   padding-left: 2rem;
   padding-right: 2rem;
-  margin-bottom: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 5rem;
+
+  @media (max-width: $mobile) {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+  }
 
   &-left {
     height: 100%;
