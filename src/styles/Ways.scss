@@ -10,6 +10,7 @@
   padding-left: 2rem;
   padding-right: 2rem;
   margin-bottom: 2rem;
+  flex-wrap: wrap;
 
   @media (max-width: $mobile) {
     display: flex;
@@ -64,6 +65,12 @@
       padding: 2rem;
       border-radius: 1rem;
 
+      &:hover {
+        .Ways-right_box-content_button {
+          margin-left: 1.5rem;
+        }
+      }
+
       &-icon {
         width: 3.125rem;
         height: 3.125rem;
@@ -85,6 +92,7 @@
           display: flex;
           gap: 0.5rem;
           align-items: center;
+          transition: 400ms ease;
 
           &-icon {
             display: flex;
