@@ -1,2 +1,17 @@
 $max-width: 1100px;
 $dark: #0c1825;
+
+.align-center {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@keyframes down-to-up {
+  from {
+    top: 0;
+  }
+  to {
+    top: -.5rem;
+  }
+}
