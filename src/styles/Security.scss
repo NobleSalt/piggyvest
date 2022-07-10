@@ -2,13 +2,16 @@
 
 .Security {
   @extend .align-center;
-  max-width: 750px;
+  max-width: 800px;
   justify-content: space-between;
   width: 100%;
   margin: auto;
   gap: 2rem;
   height: 8rem;
   color: $dark;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  margin-bottom: 2rem;
 
   &-left {
     height: 100%;
@@ -20,6 +23,7 @@
 
   &-right {
     line-height: 1.75rem;
+
     &-title {
       line-height: 3rem;
       font-size: 2rem;
