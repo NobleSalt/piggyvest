@@ -20,7 +20,7 @@
   }
 
   &-left {
-    flex: 1;
+    flex: 2;
 
     &_title {
       line-height: 3.005rem;
@@ -48,7 +48,7 @@
 
   &-right {
     @extend .align-center;
-    flex: 3;
+    flex: 5;
     gap: 2rem;
     flex-wrap: wrap;
     justify-content: space-around;
