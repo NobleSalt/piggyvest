@@ -1,0 +1,118 @@
+@import "styles/global.scss";
+
+.Invest {
+  width: clamp(100px, 100%, 900px);
+  margin: auto;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+  padding: 3rem 2rem;
+  color: $dark;
+  @extend .align-center;
+  gap: 5rem;
+
+  @media (max-width: $max-width) {
+    flex-direction: column;
+    width: clamp(100px, 100%, 500px);
+    margin: auto;
+  }
+
+  &-left {
+    flex: 2;
+
+    &_img {
+      width: 90%;
+      margin: auto;
+    }
+  }
+
+  &-right {
+    flex: 3;
+
+    @media (max-width: $max-width) {
+      text-align: center;
+    }
+
+    &_title {
+      line-height: 1.23;
+      font-size: 3rem;
+      font-weight: 800;
+      margin-bottom: 2rem;
+    }
+
+    &_description {
+      width: clamp(100px, 100%, 500px);
+      line-height: 1.7rem;
+      font-weight: 300;
+      margin-top: 1rem;
+      margin-bottom: 2rem;
+
+      @media (max-width: $max-width) {
+        text-align: center;
+        margin: auto;
+      }
+    }
+
+    &_more {
+      text-transform: capitalize;
+      display: flex;
+      align-items: baseline;
+      gap: 0.2rem;
+      color: $purple;
+      font-size: 1.125rem;
+      display: inline;
+      font-weight: 500;
+      //
+      background-image: linear-gradient(180deg, transparent 65%, $purple-bg 0);
+      background-repeat: no-repeat;
+      background-size: 0 100%;
+      transition: all 0.3s ease-in-out;
+
+      &:hover {
+        background-size: 100% 100%;
+      }
+
+      &::after {
+        content: " >";
+        font-size: 1.2rem;
+      }
+    }
+
+    &_socials {
+      @extend .align-center;
+      justify-content: left;
+      column-gap: 1rem;
+
+      @media (max-width: $max-width) {
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+
+      &-social {
+        padding: 0.5rem 0.75rem;
+        border: 1px solid #bbb !important;
+        border-radius: 10px;
+        font-weight: bold;
+        transition: all 400ms ease-in-out;
+        @extend .align-center;
+        column-gap: 0.5rem;
+        position: relative;
+        cursor: pointer;
+        height: 3rem;
+
+        &_icon {
+          margin-top: 0.25rem;
+          font-size: 1.5rem;
+        }
+
+        &_name {
+          font-size: small;
+        }
+
+        &:hover {
+          animation: down-to-up ease-in-out 300ms;
+          animation-fill-mode: forwards;
+        }
+      }
+    }
+  }
+}
