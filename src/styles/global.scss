@@ -19,3 +19,12 @@ $max: 1250px;
     top: -0.5rem;
   }
 }
+
+@keyframes scrolling {
+  0% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(-715px);
+  }
+}

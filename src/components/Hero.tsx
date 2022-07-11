@@ -1,4 +1,4 @@
-import { FaApple, FaGooglePlay } from 'react-icons/fa'
+import { FaApple } from 'react-icons/fa'
 import 'styles/Hero.scss'
 import girl from 'assets/girl.png'
 import gPlay from 'assets/google-icon.svg'

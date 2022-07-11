@@ -1,6 +1,6 @@
 import "@animxyz/core";
 import { XyzTransition } from "@animxyz/react";
-import { Footer, Hero, Nav, Security, TopFooter, Ways } from "components";
+import { Footer, Hero, Nav, Security, Testimonials, TopFooter, Ways } from "components";
 
 
 function App() {
@@ -11,6 +11,7 @@ function App() {
         <Hero />
         <Security />
         <Ways />
+        <Testimonials />
         <TopFooter />
         <Footer />
       </div>
