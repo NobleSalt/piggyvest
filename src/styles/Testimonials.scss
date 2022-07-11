@@ -12,6 +12,8 @@
 
   @media (max-width: $max-width) {
     flex-direction: column-reverse;
+    width: clamp(100px, 100%, 500px);
+    margin: auto;
   }
 
   &-left {
