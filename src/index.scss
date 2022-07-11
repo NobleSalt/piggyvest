@@ -49,7 +49,7 @@ a {
 }
 
 .max-width {
-  max-width: 1250px;
+  max-width: $max;
   width: 100%;
   // width: clamp(100px, 100%, 1250px);
 }
