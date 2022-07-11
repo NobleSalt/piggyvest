@@ -66,10 +66,11 @@ export function Testimonials() {
                </div>
             </div>
 
+
             <div className="Testimonials-left_messages-item">
                <p className="Testimonials-left_messages-item_time">Sunday, 3rd of April 2022 by 03:09 AM</p>
                <div className="Testimonials-left_messages-item_message">
-                  <img src="https://storage.googleapis.com/piggybankservice.appspot.com/_story_pics/img5b900ae055.jpeg" alt="osas p" className="Testimonials-left_messages-item_message-img" width="35" height="10" />
+                  <img className='Testimonials-left_messages-item_message-img' src="https://storage.googleapis.com/piggybankservice.appspot.com/_story_pics/img5b900ae055.jpeg" alt="osas p" width="35" height="10" />
                   <div className="Testimonials-left_messages-item_message-chat">
                      <h1 className="Testimonials-left_messages-item_message-chat_name">osas p</h1>
                      <p className="Testimonials-left_messages-item_message-chat_body">I can't even believe I can be this diligent towards saving. Thank you Piggy.</p>
@@ -78,7 +79,6 @@ export function Testimonials() {
             </div>
 
             <div className="Testimonials-left_messages-item">
-
                <p className="Testimonials-left_messages-item_time">Tuesday, 1st of March 2022 by 20:20 PM</p>
                <div className="Testimonials-left_messages-item_message">
                   <img className='Testimonials-left_messages-item_message-img' src="https://storage.googleapis.com/piggybankservice.appspot.com/_story_pics/img3662b744b3.jpeg" alt="Grace P" width="35" height="10" />
