@@ -12,7 +12,7 @@
   margin-bottom: 2rem;
   flex-wrap: wrap;
 
-  @media (max-width: $mobile) {
+  @media (max-width: $max-width) {
     display: flex;
     text-align: center;
     align-items: center;
@@ -53,7 +53,7 @@
     flex-wrap: wrap;
     justify-content: space-around;
 
-    @media (max-width: $mobile) {
+    @media (max-width: $max-width) {
       justify-content: center;
     }
 
