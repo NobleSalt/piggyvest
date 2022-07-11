@@ -5,7 +5,7 @@
   width: clamp(100px, 100%, 1000px);
   margin: auto;
   justify-content: space-between;
-  padding: 3rem 2rem;
+  padding: 4rem 2rem;
   flex-wrap: wrap;
   gap: 2rem;
 
@@ -19,8 +19,8 @@
   }
 
   &-right {
+    @extend .align-center;
     flex: 2;
-    display: flex;
     gap: 2rem;
     justify-content: space-around;
 
