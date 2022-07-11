@@ -1,6 +1,6 @@
 export function Footer() {
 
-   return <footer className="footer">
+   return <footer className="Footer">
       Footer
    </footer>
 }
