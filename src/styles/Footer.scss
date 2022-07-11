@@ -29,11 +29,23 @@
       text-transform: capitalize;
       font-size: small;
       flex-wrap: wrap;
+      row-gap: 2rem;
+
+      @media (max-width: $max-width) {
+        width: 100%;
+        flex: 1;
+        justify-content: space-between;
+      }
 
       &-section {
-        &.right {
+
+         &.right {
           text-align: right;
           width: clamp(100px, 100%, 250px);
+
+          @media (max-width: $max-width) {
+            text-align: left;
+          }
         }
 
         &_title {
@@ -45,6 +57,10 @@
             justify-content: right;
             gap: 0.25rem;
             font-size: 1.6rem;
+
+            @media (max-width: $max-width) {
+              justify-content: left;
+            }
           }
         }
 
