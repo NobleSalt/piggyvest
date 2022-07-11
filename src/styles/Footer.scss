@@ -3,10 +3,72 @@
 .Footer {
   width: clamp(100px, 100%, $max);
   margin: auto;
-  margin-top: 5rem;
+  margin-top: 3rem;
   margin-bottom: 2rem;
   padding: 3rem 2rem;
   color: $text-grey;
+
+  &-one {
+    @extend .align-center;
+    align-items: flex-start;
+    gap: 4rem;
+    margin-bottom: 4rem;
+
+    @media (max-width: $max-width) {
+      flex-direction: column;
+    }
+
+    &_left {
+      flex: 1;
+    }
+
+    &_right {
+      flex: 4;
+      @extend .align-center;
+      align-items: flex-start;
+      text-transform: capitalize;
+      font-size: small;
+      flex-wrap: wrap;
+
+      &-section {
+        &.right {
+          text-align: right;
+          width: clamp(100px, 100%, 250px);
+        }
+
+        &_title {
+          color: $dark;
+
+          &-icons {
+            display: flex;
+            align-items: flex-start;
+            justify-content: right;
+            gap: 0.25rem;
+            font-size: 1.6rem;
+          }
+        }
+
+        &_children {
+          margin-top: 1rem;
+          display: flex;
+          flex-direction: column;
+          gap: 0.8rem;
+          a {
+            &.small {
+              text-transform: lowercase;
+            }
+
+            &:hover {
+              color: blue;
+            }
+          }
+          &-child {
+            font-weight: 500;
+          }
+        }
+      }
+    }
+  }
 
   &-two {
     width: clamp(100px, 100%, 750px);
@@ -18,10 +80,10 @@
     margin-bottom: 2rem;
   }
 
-  &-three{
-   text-align: center;
-   font-size: smaller;
-   font-weight: 500;
-   color: blue;
+  &-three {
+    text-align: center;
+    font-size: smaller;
+    font-weight: 500;
+    color: blue;
   }
 }
