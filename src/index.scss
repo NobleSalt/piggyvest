@@ -13,7 +13,6 @@ body {
   width: 100%;
   min-height: 1000px;
   font-family: "DM Sans", sans-serif !important;
-  // background-color: gray;
   position: relative;
   z-index: 1;
   overflow-x: hidden;
@@ -72,8 +71,8 @@ a {
 }
 
 .blue-circle {
-  background-color: rgb(224, 239, 255);
-  color: rgb(0, 51, 153);
+  background-color: $blue-bg;
+  color: $blue;
 }
 
 .red-circle {

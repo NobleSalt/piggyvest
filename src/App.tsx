@@ -1,6 +1,6 @@
 import "@animxyz/core";
 import { XyzTransition } from "@animxyz/react";
-import { Footer, Hero, Invest, Nav, Security, Testimonials, TopFooter, Ways } from "components";
+import { Footer, Hero, Invest, Nav, Saver, Security, Testimonials, TopFooter, Ways } from "components";
 
 
 function App() {
@@ -12,6 +12,7 @@ function App() {
         <Security />
         <Ways />
         <Invest />
+        <Saver />
         <Testimonials />
         <TopFooter />
         <Footer />
