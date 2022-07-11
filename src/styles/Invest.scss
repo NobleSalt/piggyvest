@@ -19,6 +19,11 @@
   &-left {
     flex: 2;
 
+    @media (max-width: $max-width) {
+      display: flex;
+      justify-content: center;
+    }
+
     &_img {
       width: 90%;
       margin: auto;

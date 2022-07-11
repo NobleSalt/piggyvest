@@ -1,7 +1,5 @@
 import 'styles/Saver.scss'
 import { BsArrowRight } from 'react-icons/bs'
-import { FaApple } from 'react-icons/fa'
-import gPlay from 'assets/google-icon.svg'
 
 export function Saver() {
 
@@ -22,6 +20,7 @@ export function Saver() {
          </div>
 
          <div className="Saver_container-right">
+            hehe
          </div>
       </div>
 

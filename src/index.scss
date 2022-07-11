@@ -21,8 +21,10 @@ body {
 }
 
 .Home {
+  scroll-behavior: smooth;
   position: relative;
   z-index: 1;
+  overflow-x: hidden;
   min-height: 1000px;
 }
 
