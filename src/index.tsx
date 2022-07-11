@@ -3,8 +3,6 @@ import ReactDOM from 'react-dom/client';
 import 'index.scss';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import "@animxyz/core";
-import { XyzTransition } from "@animxyz/react";
 
 
 const root = ReactDOM.createRoot(
@@ -13,9 +11,7 @@ const root = ReactDOM.createRoot(
 
 root.render(
   <React.StrictMode>
-    <XyzTransition appear duration="auto">
-      <App />
-    </XyzTransition>
+    <App />
   </React.StrictMode>
 );
 
