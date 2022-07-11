@@ -20,7 +20,7 @@ export function Saver() {
          </div>
 
          <div className="Saver_container-right">
-            hehe
+            <img className='Saver_container-right_img mobile' src="https://storage.googleapis.com/piggyvestwebsite/piggywebsite2020/saver_c7daec0bf5/saver_c7daec0bf5.png" alt="saver" />
          </div>
       </div>
 
