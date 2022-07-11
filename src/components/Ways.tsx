@@ -6,7 +6,7 @@ import film from 'assets/film.png'
 
 import 'styles/Ways.scss'
 
-export default function Ways() {
+export function Ways() {
 
 
    return (

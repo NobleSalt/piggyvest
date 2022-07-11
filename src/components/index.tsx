@@ -1,0 +1,6 @@
+export { Footer } from 'components/Footer'
+export { Hero } from 'components/Hero'
+export { Nav } from 'components/Nav'
+export { Security } from 'components/Security'
+export { Ways } from 'components/Ways'
+export { TopFooter } from 'components/TopFooter'

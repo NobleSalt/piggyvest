@@ -1,9 +1,6 @@
-import Hero from 'components/Hero';
-import Nav from 'components/Nav';
-import Security from 'components/Security';
-import Ways from 'components/Ways';
 import "@animxyz/core";
 import { XyzTransition } from "@animxyz/react";
+import { Footer, Hero, Nav, Security, TopFooter, Ways } from "components";
 
 
 function App() {
@@ -14,6 +11,8 @@ function App() {
         <Hero />
         <Security />
         <Ways />
+        <TopFooter />
+        <Footer />
       </div>
     </XyzTransition>
   );

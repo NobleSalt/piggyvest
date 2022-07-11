@@ -3,7 +3,7 @@ import 'styles/Hero.scss'
 import girl from 'assets/girl.png'
 import gPlay from 'assets/google-icon.svg'
 
-export default function Hero() {
+export function Hero() {
 
    return <div className="max-width Hero">
       <div className="Hero-left">

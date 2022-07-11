@@ -1,0 +1,35 @@
+@import "styles/global.scss";
+
+.TopFooter {
+  @extend .align-center;
+  width: clamp(100px, 100%, 1000px);
+  margin: auto;
+  justify-content: space-between;
+  padding: 3rem 2rem;
+  flex-wrap: wrap;
+  gap: 2rem;
+
+  @media (max-width: $max-width) {
+    flex-direction: column;
+  }
+
+  &-left {
+    flex: 1;
+    font-size: xx-large;
+  }
+
+  &-right {
+    flex: 2;
+    display: flex;
+    gap: 2rem;
+    justify-content: space-around;
+
+    &_item {
+      flex: 1;
+      width: clamp(100px, 100%, $max-width);
+      &-img {
+        width: 80%;
+      }
+    }
+  }
+}

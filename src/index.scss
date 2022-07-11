@@ -51,6 +51,7 @@ a {
 .max-width {
   max-width: 1250px;
   width: 100%;
+  // width: clamp(100px, 100%, 1250px);
 }
 
 // desktop screen
@@ -88,4 +89,9 @@ a {
 .green-circle {
   background-color: rgb(228, 255, 240);
   color: rgb(6, 155, 64);
+}
+
+.bg-grey {
+  background-color: $grey;
+  color: $dark;
 }

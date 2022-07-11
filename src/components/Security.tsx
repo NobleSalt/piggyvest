@@ -2,7 +2,7 @@ import shield from 'assets/security.png'
 import 'styles/Security.scss'
 
 
-export default function Security() {
+export function Security() {
    return (
       <div className="Security">
          <div className="Security-left">

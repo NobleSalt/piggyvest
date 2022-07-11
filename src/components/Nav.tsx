@@ -3,7 +3,7 @@ import logo from 'assets/logo.svg'
 import { FiMenu, FiX } from 'react-icons/fi'
 import { useState } from 'react'
 
-export default function Nav() {
+export function Nav() {
    const [active, setActive] = useState<boolean>(false)
 
    return <nav className='fade small stagger ease-out-back duration-30 bg-white sticky'>
