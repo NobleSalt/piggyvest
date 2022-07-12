@@ -9,6 +9,7 @@
   flex-wrap: wrap;
   transition: all 300ms ease-in-out;
   margin-top: 4rem;
+  justify-content: space-between;
 
   &-left {
     //  flex: 0 0 40%;
@@ -86,6 +87,11 @@
 
   &-right {
     flex: 0 0 50%;
+    position: relative;
+    display: flex;
+    justify-content: right;
+    // padding-right: 3rem;
+
     @media (max-width: $mobile) {
       // height: 20rem;
       display: flex;
@@ -96,7 +102,52 @@
 
     &_i {
       height: 100%;
-      // width: 100%;
+      margin-right: 6rem;
+
+      @media (max-width: $mobile) {
+        margin-right: 3rem;
+      }
+    }
+
+    &_dot {
+      position: absolute;
+      width: 14rem;
+      left: 1.5rem;
+      top: 60%;
+    }
+
+    &_circle {
+      position: absolute;
+      z-index: 1;
+      right: 4.75rem;
+      top: 28%;
+    }
+
+    &_rect {
+      position: absolute;
+      top: -2.25rem;
+      right: 3rem;
+      z-index: -1;
+    }
+
+    &_cross {
+      position: absolute;
+      top: -2.25rem;
+      left: 6rem;
+    }
+
+    &_rent {
+      position: absolute;
+      width: 14rem;
+      left: 0rem;
+      top: 28%;
+    }
+
+    &_investify {
+      position: absolute;
+      width: 14rem;
+      bottom: 2rem;
+      right: 2rem;
     }
   }
 }

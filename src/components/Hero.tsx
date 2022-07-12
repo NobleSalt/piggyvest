@@ -1,6 +1,12 @@
 import { FaApple } from 'react-icons/fa'
 import 'styles/Hero.scss'
 import girl from 'assets/girl.png'
+import my_rent from 'assets/my_rent.png'
+import investify from 'assets/investify.png'
+import rect from 'assets/rect.png'
+import cross from 'assets/cross.svg'
+import dot from 'assets/dot.svg'
+import circle from 'assets/circle.svg'
 import gPlay from 'assets/google-icon.svg'
 import ScrollAnimation from 'react-animate-on-scroll'
 
@@ -24,7 +30,13 @@ export function Hero() {
             </div>
          </div>
          <div className="Hero-right">
+            <img src={circle} alt="circle" className="Hero-right_circle" />
+            <img src={dot} width="33" height="108" alt="dot" className="Hero-right_dot" />
             <img src={girl} className="Hero-right_i" alt="girl" />
+            <img src={rect} alt="rect" className="Hero-right_rect" />
+            <img src={my_rent} alt="my_rent" className="Hero-right_rent" />
+            <img src={investify} alt="investify" className="Hero-right_investify" />
+            <img src={cross} alt="cross" className="Hero-right_cross" />
          </div>
       </div>
    </ScrollAnimation>
