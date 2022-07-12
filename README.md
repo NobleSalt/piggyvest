@@ -3,5 +3,5 @@ My PiggyVest Home Page Clone
 
 ## OINK OINK !
 
-[PiggyVest](https://www.piggyvest.com/)
-[MyClone](https://react-piggyvest-clone.vercel.app/)
+[Click to see Original](https://www.piggyvest.com/)\
+[Click to see My Clone](https://react-piggyvest-clone.vercel.app/)
