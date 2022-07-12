@@ -4,7 +4,7 @@ import 'styles/Security.scss'
 
 export function Security() {
    return (
-      <div className="Security">
+      <div className="Security animate__animated animate__fadeInLeft">
          <div className="Security-left">
             <img src={shield} alt="" />
          </div>

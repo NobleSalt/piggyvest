@@ -10,7 +10,7 @@ export function Ways() {
 
 
    return (
-      <div className="max-width Ways">
+      <div className="max-width Ways animate__animated animate__fadeInUp">
          <div className="Ways-left">
             <h1 className="Ways-left_title">4 ways to build your savings</h1>
             <p className="Ways-left_body">Earn 5%-15% when you save with any of these PiggyVest plans.</p>

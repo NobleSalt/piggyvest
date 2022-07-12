@@ -6,7 +6,7 @@ import techcrunch from 'assets/techcrunch.png'
 export function TopFooter() {
 
    return (
-      <div className="bg-grey">
+      <div className="bg-grey animate__animated animate__fadeInUp">
          <div className="TopFooter">
             <h1 className="TopFooter-left">As featured in</h1>
             <div className="TopFooter-right">

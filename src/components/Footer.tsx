@@ -4,7 +4,7 @@ import { FaFacebookSquare, FaInstagramSquare, FaTwitterSquare } from 'react-icon
 
 export function Footer() {
 
-   return <footer className="Footer">
+   return <footer className="Footer animate__animated animate__fadeInUp">
       <div className="Footer-one">
          <div className="Footer-one_left">
             <img src={logo} alt="logo" className="Footer-one_left" />
