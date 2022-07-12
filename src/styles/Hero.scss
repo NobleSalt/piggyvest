@@ -11,8 +11,12 @@
   margin-top: 4rem;
   justify-content: space-between;
 
-  @media (max-width: $mobile) {
+  @media (max-width: $max-width) {
     flex-direction: column;
+  }
+
+  @media (max-width: $mobile) {
+    flex-direction: unset;
   }
 
   &-left {
@@ -95,12 +99,15 @@
     display: flex;
     justify-content: right;
 
+    @media (max-width: $max-width) {
+      margin-top: 4rem;
+    }
+
     @media (max-width: $mobile) {
       display: flex;
       justify-content: center;
       flex: 1;
       margin: auto;
-      margin-top: 4rem;
     }
 
     &_i {

@@ -13,7 +13,9 @@ import ScrollAnimation from 'react-animate-on-scroll'
 export function Hero() {
 
    return <ScrollAnimation animateOut='fadeIn' duration={.3} initiallyVisible>
+
       <div className="max-width Hero">
+
          <div className="Hero-left">
             <h1 className="Hero-left_title">The Better Way to Save & Invest.</h1>
             <p className="Hero-left_body">PiggyVest helps over 3 million customers achieve their financial goals by helping them save and invest with ease.</p>
@@ -29,6 +31,7 @@ export function Hero() {
                </div>
             </div>
          </div>
+
          <div className="Hero-right">
             <img src={circle} alt="circle" className="Hero-right_circle" />
             <img src={dot} width="33" height="108" alt="dot" className="Hero-right_dot" />
@@ -38,6 +41,7 @@ export function Hero() {
             <img src={investify} alt="investify" className="Hero-right_investify" />
             <img src={cross} alt="cross" className="Hero-right_cross" />
          </div>
+
       </div>
    </ScrollAnimation>
 }

@@ -21,6 +21,7 @@ export function Invest() {
                <p className="Invest-right_description">Invest securely and confidently on the go. Grow your money confidently by investing in pre-vetted investment opportunities.</p>
                <a href="#!" className="Invest-right_more">Learn more about Investments.</a>
             </div>
+
          </div>
       </ScrollAnimation>
    )
