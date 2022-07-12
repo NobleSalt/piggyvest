@@ -14,8 +14,9 @@
   @media (max-width: $max-width) {
     flex-direction: column;
   }
-
+  
   @media (max-width: $mobile) {
+    gap: 6rem;
     flex-direction: unset;
   }
 
@@ -101,6 +102,7 @@
     margin-top: 3rem;
 
     @media (max-width: $max-width) {
+      margin-top: 6rem;
     }
 
     @media (max-width: $mobile) {
