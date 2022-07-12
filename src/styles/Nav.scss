@@ -3,12 +3,11 @@
 .Nav {
   @extend .align-center;
   background-color: white;
-  padding: 1.9rem 2rem;
+  padding: 1.9rem 5rem;
   height: 6rem;
   column-gap: 3rem;
   width: 100%;
   margin: auto;
-
   //
   position: fixed;
   top: 0;
