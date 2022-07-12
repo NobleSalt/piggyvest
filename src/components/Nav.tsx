@@ -10,7 +10,7 @@ export function Nav() {
 
    return (
       <ScrollAnimation animateIn='fadeIn' duration={.3} initiallyVisible>
-         <nav className='fade small stagger ease-out-back duration-30 bg-white sticky' >
+         <nav className='fade small stagger ease-out-back duration-30 bg-whit sticky' >
             <div className="max-width Nav">
                <a href='/' className="Nav_img">
                   <img src={logo} alt="Logo" />

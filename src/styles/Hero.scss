@@ -11,6 +11,10 @@
   margin-top: 4rem;
   justify-content: space-between;
 
+  @media (max-width: $mobile) {
+    flex-direction: column;
+  }
+
   &-left {
     //  flex: 0 0 40%;
     flex: 3;

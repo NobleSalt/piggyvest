@@ -5,6 +5,7 @@ import { Footer, Hero, Invest, Nav, Saver, Security, Testimonials, TopFooter, Wa
 function App() {
   return (
     <div className="Home page-hero fade small stagger ease-out-back animate__animated">
+      <div className="Home-rect"></div>
       <Nav />
       <Hero />
       <Security />
